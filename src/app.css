@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white
+}
+
+/* Navbar */
+
+header {
+    background-color: #240046;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header li {
+    list-style: none;
+    font-weight: bold;
+    padding: 5px 12px;
+}
+
+header .navlink {
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+
+}
+
+header .navlink::after {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #e0aaff;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);
+
+}
+
+header .navlink:hover::after {
+    opacity: 1;
+    transform: translateY(15px);
+
+}
+
+/* Navbar */
+
+/* Home */
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.home-tittle {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.home-p {
+
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+
+/* Home */
+
+/* description home */
+
+#presentacion .home-container-presentacion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 200px 12px;
+}
+
+#presentacion h2 {
+    padding: 10px;
+    color: #9d4edd;
+}
+
+/* description home */
+
+
+/* shoes list section */
+.shoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    height: auto;
+
+}
+
+.shoes-tittle {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.shoes-list button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 130px;
+    padding: 20px 0px;
+    font-size: 2em;
+    text-align: center;
+    border-style: solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.3s;
+
+
+}
+
+.shoes-list button:hover {
+    box-shadow: 5px 5px 5px rgb(182, 181, 181)
+}
+
+.shoes-list button:nth-child(1) {
+
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/products.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+
+}
+
+
+.shoes-list button:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/products8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.shoes-list button:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/products7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.shoes-list button:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/products3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.shoes-list button:nth-child(5) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/products5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+/* shoes list section */
+/* modal */
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.modal-container {
+    width: 350px;
+    height: 350px;
+    background: rgb(88, 86, 86);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+
+}
+
+.modal-container h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.modal-container p {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.modal-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    color: aliceblue;
+
+}
+
+svg {
+
+    height: 20px;
+    width: 20px;
+
+}
+
+.modal-close:hover {
+    background: aliceblue;
+    color: black;
+}
+
+
+.modal-display1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url('assets/vans.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    width: 300px;
+}
+
+.modal-display2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url('assets/adidas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    width: 300px;
+}
+
+
+
+
+.modal-display3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url('assets/nike.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    width: 300px;
+}
+
+.modal-display4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url('assets/puma.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    width: 300px;
+}
+
+.modal-display5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url('assets/reebok.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    width: 300px;
+}
+
+
+/* Contact Us Section */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-hero {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/contactus.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 1.5em;
+
+}
+
+.contact-form {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+
+}
+
+.contact-form input {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+    border-radius: 10px;
+    border-style: none;
+
+
+}
+
+.contact-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 40%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #9d4edd;
+    color: aliceblue;
+
+}
+
+/* valorations */
+
+.valorations-tittle {
+    color: aliceblue;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.valorations-container {
+
+    width: 350px;
+    padding: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+ul.slider {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+ul.slider p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 0.8em;
+
+}
+
+
+ul.slider li img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.slider-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    padding-bottom: 35px;
+
+}
+
+.slider-menu li {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.slider-menu li a {
+    display: inline-block;
+    background-color: gray;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+
+}
+
+.slider-menu li a:hover {
+    background: #e0aaff;
+    color: black;
+
+}
+
+
+
+
+
+/* shoes list section */
+
+
+
+
+/* media queries */
+
+@media (min-width : 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+
+
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #presentacion .home-container-presentacion {
+        display: flex;
+
+    }
+
+    #presentacion .image-container {
+
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)), url('assets/hermes-rivera-OX_en7CXMj4-unsplash.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        border-radius: 20px;
+
+    }
+
+    #presentacion .presentacion-container {
+        text-align: initial;
+        padding: 0px 30px;
+        height: 500px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    #presentacion .presentacion-container h2 {
+        margin-bottom: 15px;
+
+    }
+
+
+    .shoes-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        height: 100%;
+        font-size: 1.5em;
+
+    }
+
+    .shoes-tittle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 3em;
+        padding-bottom: 10px;
+
+
+
+    }
+
+    .shoes-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 400px;
+        margin-bottom: 25px;
+
+    }
+
+
+    .shoes-list button {
+        width: 500px;
+        height: 250px;
+        font: 3em;
+    }
+
+    .shoes-list button:hover {
+        box-shadow: 5px 5px 5px white;
+    }
+
+    .modal-container {
+        width: 550px;
+        height: 450px;
+    }
+
+    .modal-display1 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    .modal-display2 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    .modal-display3 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    .modal-display4 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    .modal-display5 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    .contact-form input {
+        display: flex;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 400px;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+
+
+    .valorations-container {
+
+        width: 800px;
+        padding: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .valorations-tittle {
+        padding: 130px
+    }
+
+    ul.slider {
+        position: relative;
+        width: 800px;
+        height: 300px;
+
+    }
+
+    .slider-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding-bottom: 45px;
+
+    }
+
+    .slider-menu li a {
+        display: inline-block;
+        background-color: gray;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        transition: .3s;
+
+    }
+
+    ul.slider p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 15px;
+        font-size: 1.5em;
+
+    }
+}
