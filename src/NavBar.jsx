@@ -7,7 +7,7 @@ export const NavBar = () => {
             <div className='container'>
                 <span className='logo'>ShoesApp</span>
                 <nav>
-                    <li><NavLink className="navlink"
+                    <li><NavLink className="navlink "
                         to="/">Home</NavLink>
                     </li>
                     <li><NavLink className="navlink" to="shoeslist">Products</NavLink></li>

@@ -8,10 +8,10 @@ export const Valorations = () => {
                 <div className='valorations-container'>
                     <div className='valorations-cards'>
                         <ul className='slider'>
-                            <li id='slide1' > <img src="src/assets/slider1.jpg" alt="" />
+                            <li id='slide1' > <img src="src/assets/slider1.jpg" alt="" className='animate__animated animate__bounceInLeft' />
 
                             </li>
-                            <li id='slide2' > <img src="src/assets/slider2.jpg" alt="" />
+                            <li id='slide2'  > <img src="src/assets/slider2.jpg" alt="" />
                                 <p>"Excelente servicio y atencions" @leodiaz14</p>
                             </li>
                             <li id='slide3'> <img src="src/assets/slider3.jpg" alt="" />
@@ -25,7 +25,7 @@ export const Valorations = () => {
                         </ul>
                     </div>
 
-                    <ul className='slider-menu'>
+                    <ul className='slider-menu animate__animated animate__bounceInUp '>
                         <li><a href="#slide1">1</a></li>
                         <li><a href="#slide2">2</a></li>
                         <li><a href="#slide3">3</a></li>

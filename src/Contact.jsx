@@ -1,41 +1,22 @@
 import React from 'react'
-import { useState } from 'react';
+
+import { UseForm } from './hooks/useForm';
 
 
 export const Contact = () => {
 
-    const [form, setForm] = useState({
+    const { onInputChange, onResetForm, nombre, apellido, mensaje, correo } = UseForm({
         nombre: '',
         apellido: '',
+        mensaje: '',
         correo: '',
-        mensaje: ''
+
     })
 
-    const handleSubmit = (event) => {
+    const onFormSubmit = (event) => {
         event.preventDefault();
-        event.target.reset()
-
+        event.target.reset();
     }
-
-    const handleChange = (event) => {
-        const { target } = event;
-        const { name, value } = target;
-
-
-        const newValues = {
-            ...form,
-            [name]: value,
-
-        }
-        setForm(newValues);
-    }
-
-    const onResetForm = () => {
-        setForm(' ')
-    }
-
-
-
 
     return (
         <>
@@ -48,48 +29,51 @@ export const Contact = () => {
 
 
             <h4 className='form-tittle'>Envianos tu mensaje!</h4>
-            <div className='contact-form'>
-                <form onSubmit={handleSubmit}>
+            <div className='contact-form '>
+                <form onSubmit={onFormSubmit}>
                     <input
+                        onChange={onInputChange}
                         type="text"
-                        name="nombre"
-                        value={form.nombre}
                         placeholder="Nombre"
-                        onChange={handleChange}
+                        name="nombre"
+                        value={nombre}
+
+
                     />
 
                     <input
+                        onChange={onInputChange}
                         type="text"
                         placeholder="Apellido"
                         name="apellido"
-                        value={form.apellido}
-                        onChange={handleChange}
+                        value={apellido}
                     />
-                    <input type="email"
+                    <input
+                        onChange={onInputChange}
+                        type="email"
                         placeholder="alguien@ejemplo.com"
-                        value={form.correo}
                         name="correo"
-                        onChange={handleChange}
+                        value={correo}
 
                     />
                     <input
+                        onChange={onInputChange}
                         type="textarea"
                         placeholder="Tu mensaje"
                         name="mensaje"
-                        value={form.mensaje}
-                        onChange={handleChange}
+                        value={mensaje}
                     />
 
-                    <button
-                        onClick={onResetForm}
+                    <button onClick={onResetForm}
                     >Enviar
 
                     </button>
-
-
-
-
                 </form>
+
+
+
+
+
             </div>
 
         </>

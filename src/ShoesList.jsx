@@ -39,9 +39,9 @@ export const ShoesList = () => {
                     state={state1}
                     changeState={changeState1}
                 >
-                    <div className='modal-display1 '>
+                    <div className='modal-display1 animate__animated animate__fadeInLeft'>
                     </div>
-                    <div className='modal-items'>
+                    <div className='modal-items '>
                         <h4>Vans classic</h4>
                         <p>Las de siempre, las de todos los días.</p>
                     </div>
@@ -52,8 +52,9 @@ export const ShoesList = () => {
                     // le aplicamos los dos estados para poder cambiarlos y pasarlos como parametro al modal
                     state={state2}
                     changeState={changeState2}
+
                 >
-                    <div className='modal-display2'>
+                    <div className='modal-display2 animate__animated animate__fadeInRight'>
 
                     </div>
                     <div className='modal-items'>
@@ -69,7 +70,7 @@ export const ShoesList = () => {
                     state={state3}
                     changeState={changeState3}
                 >
-                    <div className='modal-display3'>
+                    <div className='modal-display3 animate__animated animate__fadeInLeft'>
                     </div>
                     <div className='modal-items'>
                         <h4>Nike Air Force Brown</h4>
@@ -84,7 +85,7 @@ export const ShoesList = () => {
                     state={state4}
                     changeState={changeState4}
                 >
-                    <div className='modal-display4'>
+                    <div className='modal-display4 animate__animated animate__fadeInRight'>
                     </div>
                     <div className='modal-items'>
                         <h4>Puma Basket Classic</h4>
@@ -97,7 +98,7 @@ export const ShoesList = () => {
                     state={state5}
                     changeState={changeState5}
                 >
-                    <div className='modal-display5'>
+                    <div className='modal-display5 animate__animated animate__fadeInLeft'>
                     </div>
                     <div className='modal-items'>
                         <h4>Reebok Classic Leather</h4>
