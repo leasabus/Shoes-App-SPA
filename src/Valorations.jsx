@@ -8,16 +8,16 @@ export const Valorations = () => {
                 <div className='valorations-container'>
                     <div className='valorations-cards'>
                         <ul className='slider'>
-                            <li id='slide1' > <img src="/src/assets/pexels-pixabay-220453.jpg" alt="" />
-
+                            <li id='slide1' >
+                                <img src="./src/assets/pexels-pixabay-220453.jpg" alt="img1" />
                             </li>
-                            <li id='slide2'  > <img src="/src/assets/slider2.jpg" alt="" />
+                            <li id='slide2'  > <img src="./src/assets/slider2.jpg" alt="img2" />
                                 <p>"Excelente servicio y atencions" @leodiaz14</p>
                             </li>
-                            <li id='slide3'> <img src="/src/assets/slider3.jpg" alt="" />
+                            <li id='slide3'> <img src="./src/assets/slider3.jpg" alt="img3" />
                                 <p>"Buena puntualidad con las entregas" @marcos_alonso</p>
                             </li>
-                            <li id='slide4'><img src="/src/assets/slider4.jpg" alt="" />
+                            <li id='slide4'><img src="./src/assets/slider4.jpg" alt="img4" />
                                 <p>"Muy buenos productos y rápida entrega!" @fernanda14</p>
                             </li>
 
