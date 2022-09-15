@@ -16,6 +16,7 @@ export const Contact = () => {
     const onFormSubmit = (event) => {
         event.preventDefault();
         event.target.reset();
+        alert("Gracias por tu mensaje!")
     }
 
     return (

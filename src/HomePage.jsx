@@ -22,7 +22,8 @@ export const HomePage = () => {
                     <div className='image-container'></div>
                     <div className='presentacion-container'>
                         <h2 className='tittle-presentacion'>Quienes somos?</h2>
-                        <p className='p-presentacion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit maxime deleniti natus iusto repudiandae inventore, in saepe officiis mollitia labore illo magnam similique itaque ex eaque! Provident, reprehenderit libero.</p>
+                        <p className='p-presentacion'>Somos una pequeña empresa que se dedica a la venta de calzados. Nos enfocamos en la cálidad de nuestros productos
+                            como asi tambén en la atención a nuestros clientes. Contactate con nosotros!</p>
                     </div>
 
                 </div>

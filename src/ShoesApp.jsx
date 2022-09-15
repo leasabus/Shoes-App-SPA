@@ -4,7 +4,6 @@ import { NavBar } from './NavBar'
 import { Routes, Route } from 'react-router-dom';
 import { Products } from './Products';
 import { Contact } from './Contact';
-import { Valorations } from './Valorations';
 import { ShoesProducts } from './ShoesProducts';
 import { ShoesList } from './ShoesList';
 
@@ -20,7 +19,6 @@ export const ShoesApp = () => {
                     <Route path='details' element={<ShoesProducts />}></Route>
                 </Route>
                 <Route path='contact' element={<Contact />}></Route>
-                <Route path='valorations' element={<Valorations />}></Route>
                 <Route path='*' element={<h1>Not found</h1>}></Route>
             </Routes>
         </>
