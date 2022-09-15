@@ -154,12 +154,15 @@ header .navlink:hover::after {
     display: flex;
     justify-content: center;
     margin: auto;
+    align-items: center;
+    text-align: center;
     padding: 200px 12px;
 }
 
 #presentacion h2 {
     padding: 10px;
     color: #9d4edd;
+    text-align: center;
 }
 
 /* description home */

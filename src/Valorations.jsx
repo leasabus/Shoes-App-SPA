@@ -8,7 +8,7 @@ export const Valorations = () => {
                 <div className='valorations-container'>
                     <div className='valorations-cards'>
                         <ul className='slider'>
-                            <li id='slide1' > <img src="src/assets/slider1.jpg" alt="" className='animate__animated animate__bounceInLeft' />
+                            <li id='slide1' > <img src="src/assets/pexels-pixabay-220453.jpg" alt="" />
 
                             </li>
                             <li id='slide2'  > <img src="src/assets/slider2.jpg" alt="" />
